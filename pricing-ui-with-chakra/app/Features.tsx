@@ -9,9 +9,9 @@ export default function Features() {
   <Box 
   // width={"500px"}
   // width={"850px"} m="auto" mt={"25px"}
-  maxW={"850px"} m="auto"
+  maxW={"850px"} m="auto" 
   >
-    <Flex>
+    <Flex pt={"50px"}>
     <HStack>
    <Icon as={icon1} />
    <Text>30 days money back Guarantee</Text>
