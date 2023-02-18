@@ -20,30 +20,30 @@ export default function Header() {
     // </Box>
     // </div>
     <ChakraProvider>
-    <Box boxShadow={"dark-lg"}>
+    <Box boxShadow={"lg"}>
       <Container maxW={1400}>
-        <SimpleGrid templateColumns="repeat(3, 1fr)">
-          <Box pt={"5px"}>
+        <SimpleGrid templateColumns={{lg: "repeat(3, 1fr)", base: "repeat(2, 1fr)"}}>
+          <Box>
             <Image
               src={logo}
               alt="Panaverse Logo"
-              height={150}
-              width={150}
             ></Image>
           </Box>
           <Flex
+          placeItems={'center'}
+          display={{lg:'flex', base:'none'}}
           color={"black"} fontSize="18px"
           fontWeight={"semibold"} 
           gap={10}
           >
-            <Link href={"./"}>Home</Link>
+            <Link href={"/"}>Home</Link>
             <Link href={"/"}>Syllabus</Link>
             <Link href={""}>Explore</Link>
             <Link href={""}>About</Link>
             <Link href={""}>Contact</Link>
           </Flex>
-          <Box>
-            <Button mt='10px' size= 'lg' colorScheme='teal' float='right'>Apply</Button>
+          <Box display={{lg:'initial', base:"none"}}>
+            <Button  mt='10px' size= 'lg' colorScheme='teal' float='right'>Apply</Button>
           </Box>
         </SimpleGrid>
       </Container>
