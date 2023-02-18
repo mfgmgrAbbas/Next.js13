@@ -25,7 +25,7 @@ export default function Pricing() {
         <Heading fontSize={"60px"}>
         $329</Heading>
         <Text>billed just once</Text>
-        <Button mt={"20px"} w={"300px"} bg={"#2056d3"} color={"white"}>Get Started</Button>
+        <Button variant={"solid"} mt={"20px"} w={"300px"} bg={"#2056d3"} color={"white"}>Get Started</Button>
         </Box>
         {/* right box end */}
         <Box pt={"50px"} pl = "25px" pr={"15px"}>
