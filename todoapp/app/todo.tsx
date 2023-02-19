@@ -183,16 +183,17 @@ export default function Todo() {
     // className="container mx-auto mt-10" 
     >
       <h1 className="text-6xl font-bold text-blue-700 px-4 text-center ">Add Todos Here</h1>
-      <div className="flex mb-4 pt-10" >
+      <div className="flex mb-4 pt-10 " >
         <input 
-          className="border rounded-l px-3 py-2 w-full border-purple-600 "
+          
+          className="ml-20 border rounded-full px-3 py-2 w-5/6 hover:w-full border-purple-600 rounded-full "
           placeholder="add todo text"
           value={todo}
           onChange={(e) => {
             setTodo(e.target.value);
           }}
         />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r" onClick={addTodo}>
+        <button className="ml-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg" onClick={addTodo}>
           Add
         </button>
       </div>
@@ -200,7 +201,7 @@ export default function Todo() {
         {todos.map((elm) => {
           return (
             <li
-              className={`py-2 ${elm.completed ? "text-green-500 line-through" : "text-orange-500"}`}
+              className={`m-10 py-2 ${elm.completed ? "text-green-500 line-through" : "text-orange-500"}`}
               key={elm.todoText}
             >
               <input
