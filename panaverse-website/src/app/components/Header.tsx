@@ -1,4 +1,6 @@
-import {Box, Button, Container, Flex, SimpleGrid, Text, ChakraProvider} from "@chakra-ui/react";
+'use client'
+import { HamburgerIcon } from "@chakra-ui/icons";
+import {Box, Button, Container, Flex, SimpleGrid, Text, ChakraProvider, Menu, MenuButton, IconButton, MenuList, MenuItem} from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -30,20 +32,44 @@ export default function Header() {
             ></Image>
           </Box>
           <Flex
-          placeItems={'center'}
           display={{lg:'flex', base:'none'}}
+          placeItems={'center'}
           color={"black"} fontSize="18px"
           fontWeight={"semibold"} 
           gap={10}
           >
             <Link href={"/"}>Home</Link>
-            <Link href={"/"}>Syllabus</Link>
-            <Link href={""}>Explore</Link>
-            <Link href={""}>About</Link>
-            <Link href={""}>Contact</Link>
+            <Link href={"/syllabus"}>Syllabus</Link>
+            <Link href={"/explore"}>Explore</Link>
+            <Link href={"/about"}>About</Link>
+            <Link href={"/contact"}>Contact</Link>
           </Flex>
           <Box display={{lg:'initial', base:"none"}}>
             <Button  mt='10px' size= 'lg' colorScheme='teal' float='right'>Apply</Button>
+          </Box>
+          <Box pt={'20px'} display={{lg:'none', base:"initial"}}>
+            <Menu>
+              <MenuButton float={'right'} as={IconButton} aria-label='Options'
+              icon={<HamburgerIcon />} variant='outline'  />
+              <MenuList>
+                <MenuItem>
+                Home
+                </MenuItem>
+                <MenuItem>
+                Syllabus
+                </MenuItem>
+                <MenuItem>
+                Explore
+                </MenuItem>
+                <MenuItem>
+                About
+                </MenuItem>
+                <MenuItem>
+                Contact
+                </MenuItem>
+              </MenuList>
+
+            </Menu>
           </Box>
         </SimpleGrid>
       </Container>

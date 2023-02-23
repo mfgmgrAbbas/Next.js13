@@ -1,4 +1,6 @@
 "use client"
+
+import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -6,9 +8,12 @@ import Header from "./components/Header";
 
 export default function Home() {
   return ( 
+    
     <div>
-   <Header />
-   <Footer />
+   {/* <Header /> */}
+   <Banner />
+   {/* <Footer /> */}
    </div>
+   
   )
 }
