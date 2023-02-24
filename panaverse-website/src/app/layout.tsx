@@ -1,5 +1,6 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Instructor from "./components/Instructor"
 
 
 export default function RootLayout({
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Instructor />
         <Footer />
         </body>
     </html>

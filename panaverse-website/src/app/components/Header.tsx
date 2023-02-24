@@ -1,10 +1,10 @@
 'use client'
 import { HamburgerIcon } from "@chakra-ui/icons";
-import {Box, Button, Container, Flex, SimpleGrid, Text, ChakraProvider, Menu, MenuButton, IconButton, MenuList, MenuItem} from "@chakra-ui/react";
+import {Box, Button, Container, Flex, SimpleGrid, Text, ChakraProvider, Menu, MenuButton, IconButton, MenuList, MenuItem, Link} from "@chakra-ui/react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
-import logo from "../../../public/panaverseLogo.png";
+import logo from "../../../public/logo2.png";
 
 export default function Header() {
   return (
@@ -26,7 +26,7 @@ export default function Header() {
       <Container maxW={1400}>
         <SimpleGrid templateColumns={{lg: "repeat(3, 1fr)", base: "repeat(2, 1fr)"}}>
           <Box>
-            <Image
+            <Image height={130} width={130}
               src={logo}
               alt="Panaverse Logo"
             ></Image>
@@ -45,8 +45,8 @@ export default function Header() {
             <Link href={"/contact"}>Contact</Link>
           </Flex>
           <Box display={{lg:'initial', base:"none"}}>
-            <Button  mt='10px' size= 'lg' colorScheme='teal' float='right'>Apply</Button>
-          </Box>
+         <Link href="https://portal.piaic.org/" target={'_blank'}><Button  mt='10px' size= 'lg' colorScheme='teal' float='right'>Apply</Button>
+         </Link> </Box> 
           <Box pt={'20px'} display={{lg:'none', base:"initial"}}>
             <Menu>
               <MenuButton float={'right'} as={IconButton} aria-label='Options'
