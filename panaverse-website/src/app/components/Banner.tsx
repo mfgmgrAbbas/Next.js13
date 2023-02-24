@@ -1,14 +1,19 @@
+'use client'
 import { Box, Button, Container, Flex, Heading, Text, Image, ChakraProvider } from '@chakra-ui/react'
 import React from 'react'
-import avif from '../../../public/metaverse.avif'
+
+// import avif from '../../../public/metaverse.avif'
 
 export default function Banner() {
   return (
     <ChakraProvider>
+    
    <Box 
-   bg={'#ab24ab'} 
-//    bgImage='bgimg.png'
+//    bg={'#ab24ab'} 
+   bgSize='cover' bgAttachment={'fixed'}
+   bgImage='/bgimg.png'
 >
+
     <Container maxW={1400} />
     <Flex pt={{lg:'150px', base:'30px'}} pb='100px' px={{lg:'40px', base:'0px'}} display={{lg:'flex', base:'grid'}}>
         <Box flexBasis={'50%'} px='40px'>
@@ -56,6 +61,7 @@ export default function Banner() {
         </Box>
     </Flex>
    </Box>
+   
    </ChakraProvider>
   )
 }
