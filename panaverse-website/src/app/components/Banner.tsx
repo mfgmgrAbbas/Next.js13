@@ -70,17 +70,17 @@ export default function Banner() {
           <Box textAlign={'center'} p ='30px' boxShadow={'dark-lg'} borderRadius='20px' width={'280px'}>
             <Heading>Metaverse</Heading>
           <Text pt={'5px'}>Panaverse DAO is a community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. Panaverse DAO is struggling to produce professionals.</Text>
-          <Link><Button colorScheme={'teal'} variant={'link'} rightIcon={<ArrowForwardIcon/>}>Learn More</Button> </Link>
+          <Link href='/syllabus' target={'_blank'}><Button colorScheme={'teal'} variant={'link'} rightIcon={<ArrowForwardIcon/>}>Learn More</Button> </Link>
           </Box>
           <Box textAlign={'center'} p ='30px' boxShadow={'dark-lg'} borderRadius='20px' width={'280px'}>
             <Heading>Blockchain</Heading>
           <Text pt={'5px'}>Panaverse DAO is a community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. Panaverse DAO is struggling to produce professionals.</Text>
-          <Link><Button colorScheme={'teal'} variant={'link'} rightIcon={<ArrowForwardIcon/>}>Learn More</Button> </Link> 
+          <Link href='/syllabus' target={'_blank'}><Button colorScheme={'teal'} variant={'link'} rightIcon={<ArrowForwardIcon/>}>Learn More</Button> </Link> 
           </Box>
           <Box textAlign={'center'} p ='30px' boxShadow={'dark-lg'} borderRadius='20px' width={'280px'} >
             <Heading>Typescript</Heading>
           <Text pt={'5px'}>Panaverse DAO is a community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers. Panaverse DAO is struggling to produce professionals.</Text>
-          <Link><Button colorScheme={'teal'} rightIcon={<ArrowForwardIcon />} variant='link'>Learn More</Button> </Link> 
+          <Link href='/syllabus' target={'_blank'}><Button colorScheme={'teal'} rightIcon={<ArrowForwardIcon />} variant='link'>Learn More</Button> </Link> 
           </Box>
         </Flex>
         </Center>
