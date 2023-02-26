@@ -16,13 +16,16 @@ import { Box, Button, ChakraProvider, Container, Flex, Heading, Image, Link, Tex
 import React from 'react';
 import Home from '../components/Home';
 import Instructor from '../components/Instructor';
-import { RevealList } from  'next-reveal'
+import { RevealList, RevealWrapper } from  'next-reveal'
+import { motion } from 'framer-motion';
 // import type { StaticImageData } from 'next/image';
 
 export default function page() {
   return (
     <ChakraProvider>
+      <RevealWrapper origin='left' delay={200} duration={1000} distance='500px' reset={true}>
     <Home title='About' bgImage='bgimg.png'/>
+    </RevealWrapper>
     <Box>
       <Container maxW={1400}>
         {/* px is used to give padding left and padding right

@@ -67,21 +67,21 @@ export default function Footer() {
           <Box>
             <Heading color="white">Useful Links</Heading>
             <Grid pt="40px" color="gray">
-              <Link href={""}>Home</Link>
-              <Link href={""}>Syllabus</Link>
-              <Link href={""}>Explore</Link>
-              <Link href={""}>About</Link>
-              <Link href={""}>Contact</Link>
+              <Link href={"/"}>Home</Link>
+              <Link href={"/syllabus"}>Syllabus</Link>
+              <Link href={"/explore"}>Explore</Link>
+              <Link href={"/about"}>About</Link>
+              <Link href={"/contact"}>Contact</Link>
             </Grid>
           </Box>
           <Box>
             <Heading color={"white"}>Follow us</Heading>
             <Grid pt="40px" color="gray">
-              <Link href={""}>FaceBook</Link>
-              <Link href={""}>Linkedin</Link>
-              <Link href={""}>Twitter</Link>
-              <Link href={""}>YouTube</Link>
-              <Link href={""}>GitHub</Link>
+              <Link href={"https://www.facebook.com/groups/panaverse"} target='_blank'>FaceBook</Link>
+              <Link href={"https://www.linkedin.com/in/ziaukhan/"} target='_blank'>Linkedin</Link>
+              <Link href={"https://twitter.com/Panaverse_edu"} target='_blank'>Twitter</Link>
+              <Link href={"https://www.youtube.com/@panaverse"} target='_blank'>YouTube</Link>
+              <Link href={"https://github.com/panaverse"} target='_blank'> GitHub</Link>
             </Grid>
           </Box>
           <Box>
@@ -89,23 +89,29 @@ export default function Footer() {
             <Grid color='gray'>
             <HStack>
                 <IconButton
+                
+                  variant={'outline'}
                   alignItems={"end"}
-                  color={"white"}
+                  // color={"white"}
                   colorScheme="teal"
                   aria-label="Call Segun"
+                  size={'sm'}
                   icon={<PhoneIcon />}
                 />
-                <Text>+92 315 8887488</Text>
+                <Text>+92 305 8086488</Text>
               </HStack>
               <HStack>
-                <IconButton
+                <IconButton 
+                  mt={'10px'}
+                  variant='outline'
                   alignItems={"end"}
-                  color={"white"}
+                  // color={"white"}
                   colorScheme="teal"
                   aria-label="Send email"
+                  size={'sm'}
                   icon={<EmailIcon />}
                 />
-                <Text>smasnb5@gmail.com</Text>
+                <Text>panaverse@gmail.com</Text>
               </HStack>
                 
             </Grid>
